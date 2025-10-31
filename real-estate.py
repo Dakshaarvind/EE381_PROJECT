@@ -5,12 +5,11 @@ import matplotlib.pyplot as plt
 fname = 'Sales_01_20.csv'
 data = np.loadtxt(fname, delimiter=',', skiprows=1)
 
-# Assuming first column is Year and second column is Price
-# Adjust indices if your CSV has different column order
-years_col = data[:, 0].astype(int)  # First column: Year
-prices_col = data[:, 1]              # Second column: Price
 
-print("Data loaded successfully!")
+years_col = data[:, 0].astype(int)  # First column: List Year
+prices_col = data[:, 1]              # Second column: Sale Amount
+
+
 print(f"Total number of sales: {len(data)}")
 print(f"Year range: {int(np.min(years_col))} to {int(np.max(years_col))}")
 print()
