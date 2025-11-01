@@ -69,7 +69,7 @@ ax[1].set_xticks(years)
 ax[1].set_xticklabels(years, rotation=45)
 
 plt.tight_layout()
-plt.savefig('yearly_statistics.png', dpi=300, bbox_inches='tight')
+plt.savefig('stata_yearly.png', dpi=300, bbox_inches='tight')
 plt.show()
 
 # Create probability bar graph
@@ -85,8 +85,5 @@ ax2.set_xticks(years)
 ax2.set_xticklabels(years, rotation=45)
 
 plt.tight_layout()
-plt.savefig('yearly_probability.png', dpi=300, bbox_inches='tight')
+plt.savefig('prob_yearly.png', dpi=300, bbox_inches='tight')
 plt.show()
-
-print("Graphs saved as 'yearly_statistics.png' and 'yearly_probability.png'")
-print("Analysis complete!")
